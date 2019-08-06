@@ -51,8 +51,8 @@ public class TestCalculator {
     }
 
     @Test
-    public void testSpaceBetweenNumbers(){
+    public void testNewLinesBetweenNumbers(){
         Calculator calculator = new Calculator();
-        Assert.assertEquals(19, calculator.add("8 11"));
+        Assert.assertEquals(6, calculator.add("1\n2,3"));
     }
 }

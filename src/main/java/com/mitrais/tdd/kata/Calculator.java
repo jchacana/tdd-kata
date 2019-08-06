@@ -8,15 +8,8 @@ public class Calculator {
         if ("".equals(s)) {
             return 0;
         }
-        if (s.contains(",")) {
-            String[] numbers = s.split(",");
-            int result = 0;
-            for (String number : numbers)
-                result += Integer.parseInt(number);
-            return result;
-        }
-        if (s.contains(" ")) {
-            String[] numbers = s.split(" ");
+        if (s.contains(",") || s.contains("\n")) {
+            String[] numbers = s.split("[,\n]");
             int result = 0;
             for (String number : numbers)
                 result += Integer.parseInt(number);
